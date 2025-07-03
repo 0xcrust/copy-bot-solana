@@ -1,0 +1,20 @@
+[tasks.kinobi_gen]
+args = ["js/src/kinobi_gen.js"]
+command = "node"
+
+[tasks.shank_gen]
+args = ["js/src/shank.js"]
+command = "node"
+
+[tasks.orca_quote]
+args = ["js/src/orca_quote.ts"]
+command = "tsc"
+
+[tasks.fetch_anchor_idls]
+args = ["run", "--bin", "output_anchor_idls"]
+command = "cargo"
+
+[tasks.build_copy_prod]
+args = ["zigbuild", "--bin", "copy_prod", "--target", "x86_64-unknown-linux-gnu", "--release"]
+command = "cargo"
+#cargo zigbuild --target x86_64-unknown-linux-gnu --release

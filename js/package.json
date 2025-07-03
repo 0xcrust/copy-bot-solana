@@ -1,0 +1,40 @@
+{
+  "name": "kinobi-gen",
+  "version": "0.1.0",
+  "description": "Generate program clients from anchor/shank IDLs",
+  "main": "src/index.js",
+  "author": "ademolafatoke@gmail.com",
+  "scripts": {
+    "start": "tsc",
+    "prettier": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
+    "lint": "eslint -c ./.eslintrc.yml --ext .ts,.tsx src",
+    "lint:fix": "eslint -c ./.eslintrc.yml --ext .ts,.tsx src --fix"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@kinobi-so/nodes-from-anchor": "^0.21.2",
+    "@metaplex-foundation/kinobi": "^0.18.8-alpha.0",
+    "@noble/hashes": "^1.4.0",
+    "@orca-so/common-sdk": "^0.6.0",
+    "@orca-so/whirlpools-sdk": "^0.13.1",
+    "@solana/web3.js": "^1.95.0",
+    "kinobi": "^0.21.4",
+    "snake-case": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.6.2"
+  },
+  "type": "module"
+}
